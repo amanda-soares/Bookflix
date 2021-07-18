@@ -1,0 +1,131 @@
+:root{
+    --bege: #f5f5dc;
+    --marrom: #4c280e;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bege);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--marrom);
+    font-family: 'Cutive Mono', monospace;
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #5f3211 ;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a:hover{
+    color:#e9967a;
+}
+
+/*livro-principal*/
+
+.livro-principal {
+    height: 400px;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/orgulho-e-preconceito.jpg');
+    background-size: cover;
+ 
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.livro-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: wheat;
+    color: rgb(112, 29, 29);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.livro-principal .container{
+    width: 70%;
+}
+
+.box-livro{
+    height: 320px;
+    width: 100%;
+    display: block;
+    background-image: cover;
+    
+}
+
+
+.carrossel-livros{
+    margin-top: 5px;
+           
+}
+
+.botao-imagem{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    left: 80px;
+    bottom: 2px
+}
+
+.botao-imagem:hover{
+    background-color: wheat;
+    color: rgb(112, 29, 29);
+}
